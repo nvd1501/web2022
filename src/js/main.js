@@ -18,6 +18,5 @@ function showData(data, key) {
     // trả về kết quả
     return result;
 }
-
 render("product", showData(productList, "product"));
 render("category", showData(categories, "category"));
