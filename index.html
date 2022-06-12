@@ -7,10 +7,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Vite App</title>
 	<script src="https://cdn.tailwindcss.com"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<div class="max-w-7xl m-auto flex justify-between my-10 ">
+	<div class="max-w-7xl m-auto flex justify-between my-10 px-5">
 		<div class="font-medium text-2xl flex">Fudo<p class="text-red-500 ">.</p>
 		</div>
 		<div>
@@ -41,7 +46,7 @@
 	</div>
 
 
-	<header class="max-w-7xl m-auto grid grid-cols-2 gap-12 my-10">
+	<header class="max-w-7xl m-auto grid grid-cols-2 gap-12 my-10 px-5">
 		<div>
 			<div
 				class="p-4 font-medium text-lg flex text-center items-center box-boder h-10 w-36 border-red-200 border-2 text-red-500 bg-red-200">
@@ -57,17 +62,25 @@
 				Best cooks and best delivery guys all at your service. Hot tasty food will
 				<p> reach you in 60 minutes.</p>
 			</div>
-			<div class="border-x-2 border-y-2 border-black-100 rounded-lg p-4 w-[600px] mt-3 flex justify-between">
-				<input type="text" placeholder="Enter your delivery location" width="px">
-				<button class="bg-red-200">Discover</button>
-			</div>
+			<form action="" class="flex md:mr-20" _lpchecked="1">
+				<input
+				  class="w-full border border-red-500 rounded-l-lg p-2 py-4"
+				  type="text"
+				  placeholder="Enter your delivery location"
+				/>
+				<button
+				  class="bg-red-500 px-5 text-white rounded-r-lg border border-red-500"
+				>
+				  Discover
+				</button>
+			  </form>
 		</div>
 		<div>
 			<img src="src/img/Images.png" alt="" class="max-w-full">
 		</div>
 	</header>
 
-	<div class="max-w-7xl m-auto text-center">
+	<div class="max-w-7xl m-auto text-center px-5">
 		<div class="text-4xl font-bold py-8">Our Popular Dishes</div>
 		<div class="text-gray-400 mb-10">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor
 			incididunt ut <p> labore et dolore magna aliqut enim ad minim</p>
@@ -75,7 +88,7 @@
 
 	</div>
 
-	<header class="max-w-7xl m-auto">
+	<header class="max-w-7xl m-auto px-5">
 		<div class="grid md:grid-cols-3 gap-8">
 			<div class="py-4">
 				<img src="src/img/mg.png" alt="" class="max-w-full">
@@ -173,7 +186,7 @@
 		</div>
 	</header>
 
-	<div class="max-w-7xl m-auto flex justify-between ">
+	<div class="max-w-7xl m-auto flex justify-between px-5">
 		<div class="text-4xl font-bold">
 			Categories
 		</div>
@@ -181,53 +194,61 @@
 			class="box-border w-56 h-12 border-2 border-red-500 text-center py-3 rounded-md text-red-500 hover:text-white hover:bg-red-500">
 			View All Categories</div>
 	</div>
-
-	<header class="max-w-7xl m-auto">
-		<div class="grid grid-cols-6 gap-20 m-16">
-			<div class="text-center">
-				<div>
-					<img src="src/img/mg6.png" alt="" class="max-w-full">
-				</div>
-				<div class="font-medium">Breakfast</div>
+	<section class="categories">
+		<div class="max-w-7xl mx-auto px-5">
+		  <div class="categories-heading flex justify-between font-bold">
+			<h2 class="text-5xl font-bold">Categories</h2>
+			<a
+			  class="hidden md:block border-red-500 border-x-2 border-y-2 px-4 py-3 mx-4 text-red-500 font-bold rounded-lg hover:bg-red-700 hover:text-white"
+			  href=""
+			  >View all categories</a
+			>
+		  </div>
+		  <div
+			class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-10 font-bold"
+		  >
+			<div class="categories-item text-center">
+			  <img src="src/img/mg6.png" alt="" class="mx-auto" />
+			  <h3 class=""><a href="">Breakfast</a></h3>
 			</div>
-			<div class="text-center">
-				<div>
-					<img src="src/img/mg7.png" alt="" class="max-w-full">
-				</div>
-				<div class="font-medium">Vegan</div>
+			<!--End .categories-->
+			<div class="categories-item text-center">
+			  <img src="src/img/mg7.png" alt="" class="mx-auto" />
+			  <h3 class=""><a href="">Vegan</a></h3>
 			</div>
-			<div class="text-center">
-				<div>
-					<img src="src/img/mg8.png" alt="" class="max-w-full">
-				</div>
-				<div class="font-medium">Meat</div>
+			<!--End .categories-->
+			<div class="categories-item text-center">
+			  <img src="src/img/mg8.png" alt="" class="mx-auto" />
+			  <h3 class=""><a href="">Meat</a></h3>
 			</div>
-			<div class="text-center">
-				<div>
-					<img src="src/img/mg9.png" alt="" class="max-w-full">
-				</div>
-				<div class="font-medium">Dessert</div>
+			<!--End .categories-->
+			<div class="categories-item text-center">
+			  <img src="src/img/mg9.png" alt="" class="mx-auto" />
+			  <h3 class=""><a href="">Dessert</a></h3>
 			</div>
-			<div class="text-center">
-				<div>
-					<img src="src/img/mg10.png" alt="" class="max-w-full">
-				</div>
-				<div class="font-medium">Lunch</div>
+			<!--End .categories-->
+			<div class="categories-item text-center">
+			  <img src="src/img/mg10.png" alt="" class="mx-auto" />
+			  <h3 class=""><a href="">Lunch</a></h3>
 			</div>
-			<div class="text-center">
-				<div>
-					<img src="src/img/mg11.png" alt="" class="max-w-full">
-				</div>
-				<div class="font-medium">Chocolate</div>
+			<!--End .categories-->
+			<div class="categories-item text-center">
+			  <img src="src/img/mg11.png" alt="" class="mx-auto" />
+			  <h3 class=""><a href="">Chocolate</a></h3>
 			</div>
-
+		  </div>
+		  <a
+			class="block text-center md:hidden border-red-500 border-x-2 border-y-2 mt-10 px-4 py-5 mx-4 text-lg text-red-500 font-bold rounded-lg hover:bg-red-700 hover:text-white"
+			href=""
+			>View all categories</a
+		  >
 		</div>
-	</header>
-	<div class="max-w-7xl m-auto text-center text-4xl font-bold">
+	  </section>
+	<div class="max-w-7xl m-auto text-center text-4xl font-bold px-5">
 		Contact us
 	</div>
 
-	<form class="max-w-7xl m-auto mt-16">
+	<form class="max-w-7xl m-auto mt-16 px-5">
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 			<div class="text-gray-400">NAME</div>
 			<div class="text-gray-400">EMAIL ADDRESS</div>
@@ -263,26 +284,19 @@
 	</form>
 	<hr class="max-w-7xl m-auto">
 
-	<div class="max-w-7xl m-auto flex justify-between my-10 ">
-		<div class="font-medium text-2xl flex">Fudo<p class="text-red-500">.</p>
-		</div>
-		<div>
-			<ul class="flex font-medium">
-				<a href="">
-					<li class="px-4 hover:text-red-500">Home</li>
-				</a>
-				<a href="">
-					<li class="px-4 hover:text-red-500">Products</li>
-				</a>
-				<a href="">
-					<li class="px-4 hover:text-red-500">About Us</li>
-				</a>
-				<a href="">
-					<li class="px-4 hover:text-red-500">Contact Us</li>
-				</a>
-			</ul>
-		</div>
-	</div>
+	<div class="max-w-7xl mx-auto border-t mt-10 px-5">
+        <div class="md:flex justify-between items-center py-8">
+          <div class="text-center pb-5 md:text-left md:pb-0">
+            <img src="src/Icon/Logo.svg" alt="" class="mx-auto md:mr-auto" />
+          </div>
+          <ul class="flex items-center w-full">
+            <li class="px-6"><a href="">Home</a></li>
+            <li class="px-6"><a href="">Products</a></li>
+            <li class="px-6"><a href="">About Us</a></li>
+            <li class="px-6"><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
 	<script type="module" src="./src/js/main.js"></script>
 </body>
 
